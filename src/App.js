@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [amount, setAmount] = useState(0);
   return (
     <div>
       <Bill />
@@ -11,7 +12,6 @@ export default function App() {
 }
 
 function Bill() {
-  const [amount, setAmount] = useState(0);
   function handleChange(e) {
     setAmount(Number(e.target.value));
   }
