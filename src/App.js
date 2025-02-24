@@ -13,6 +13,7 @@ export default function App() {
       <SelectPercentage>How did you like the service?</SelectPercentage>
       <SelectPercentage>How did Your Friend like the service?</SelectPercentage>
       <Output amount={amount} />
+      <Reset />
     </div>
   );
 }
