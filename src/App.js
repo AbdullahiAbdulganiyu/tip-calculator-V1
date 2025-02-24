@@ -30,3 +30,19 @@ function Bill() {
     </div>
   );
 }
+
+function Percentage() {
+  return (
+    <div>
+      <p>How did you like the service?</p>
+      <span>
+        <select>
+          <option>Dissatisfied(0%)</option>
+          <option>Dissatisfied(5%)</option>
+          <option>Dissatisfied(10%)</option>
+          <option>Dissatisfied(20%)</option>
+        </select>
+      </span>
+    </div>
+  );
+}
