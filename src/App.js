@@ -9,13 +9,13 @@ export default function App() {
   }
   return (
     <div>
-      <Bill />
+      <Bill amount={amount} handleChange={handleChange} />
       <Percentage />
     </div>
   );
 }
 
-function Bill() {
+function Bill({ amount, handleChange }) {
   return (
     <div>
       <p>
