@@ -47,3 +47,13 @@ function Percentage({ children }) {
     </div>
   );
 }
+
+function Stats({ amount }) {
+  return (
+    <div>
+      <em>
+        You paid {amount} ({amount} + X)
+      </em>
+    </div>
+  );
+}
