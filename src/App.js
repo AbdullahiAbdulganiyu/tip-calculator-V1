@@ -35,7 +35,7 @@ function BillInput({ amount, handleChange }) {
 function SelectPercentage({ children }) {
   return (
     <div>
-      <span>{children}</span>
+      <label>{children}</label>
       <span>
         <select>
           <option value={0}>Dissatisfied (0%)</option>
