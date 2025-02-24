@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
 }
 
 function Bill() {
+  const [amount, setAmount] = useState(0);
   return (
     <div>
       <p>
