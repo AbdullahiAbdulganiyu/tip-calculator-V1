@@ -21,15 +21,13 @@ export default function App() {
 function BillInput({ amount, handleChange }) {
   return (
     <div>
-      <span>How much was the Bill </span>
-      <span>
-        <input
-          type="text"
-          placeholder="enter bill"
-          value={amount}
-          onChange={handleChange}
-        />
-      </span>
+      <label>How much was the Bill </label>
+      <input
+        type="text"
+        placeholder="enter bill"
+        value={amount}
+        onChange={handleChange}
+      />
     </div>
   );
 }
