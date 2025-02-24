@@ -3,6 +3,10 @@ import "./styles.css";
 
 export default function App() {
   const [amount, setAmount] = useState(0);
+
+  function handleChange(e) {
+    setAmount(Number(e.target.value));
+  }
   return (
     <div>
       <Bill />
@@ -12,9 +16,6 @@ export default function App() {
 }
 
 function Bill() {
-  function handleChange(e) {
-    setAmount(Number(e.target.value));
-  }
   return (
     <div>
       <p>
