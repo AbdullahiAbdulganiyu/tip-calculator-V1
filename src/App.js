@@ -9,15 +9,15 @@ export default function App() {
   }
   return (
     <div>
-      <Bill amount={amount} handleChange={handleChange} />
-      <Percentage>How did you like the service?</Percentage>
-      <Percentage>How did Your Friend like the service?</Percentage>
-      <Stats amount={amount} />
+      <BillInput amount={amount} handleChange={handleChange} />
+      <SelectPercentage>How did you like the service?</SelectPercentage>
+      <SelectPercentage>How did Your Friend like the service?</SelectPercentage>
+      <Output amount={amount} />
     </div>
   );
 }
 
-function Bill({ amount, handleChange }) {
+function BillInput({ amount, handleChange }) {
   return (
     <div>
       <span>How much was the Bill </span>
@@ -33,7 +33,7 @@ function Bill({ amount, handleChange }) {
   );
 }
 
-function Percentage({ children }) {
+function SelectPercentage({ children }) {
   return (
     <div>
       <span>{children}</span>
@@ -49,7 +49,7 @@ function Percentage({ children }) {
   );
 }
 
-function Stats({ amount }) {
+function Output({ amount }) {
   return (
     <div>
       <em>
