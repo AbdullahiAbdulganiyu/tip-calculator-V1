@@ -11,6 +11,7 @@ export default function App() {
     <div>
       <Bill amount={amount} handleChange={handleChange} />
       <Percentage>How did you like the service?</Percentage>
+      <Percentage>How did Your Friend like the service?</Percentage>
     </div>
   );
 }
