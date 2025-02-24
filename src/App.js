@@ -12,7 +12,7 @@ export default function App() {
 function Bill() {
   const [amount, setAmount] = useState(0);
   function handleChange(e) {
-    setAmount(e.target.value);
+    setAmount(Number(e.target.value));
   }
   return (
     <div>
