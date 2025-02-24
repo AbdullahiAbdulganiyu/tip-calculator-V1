@@ -16,6 +16,11 @@ function TipCalculator() {
   function onSetBill(e) {
     setBill(Number(e.target.value));
   }
+  function handleReset() {
+    setBill("");
+    setPercentage1(0);
+    setPercentage2(0);
+  }
   return (
     <div>
       <BillInput bill={bill} onSetBill={onSetBill} />
