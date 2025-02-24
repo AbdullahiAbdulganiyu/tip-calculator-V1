@@ -13,9 +13,6 @@ function TipCalculator() {
   const [percentage2, setPercentage2] = useState(0);
   const tip = bill * ((percentage1 + percentage2) / 2 / 100);
 
-  function onSetBill(e) {
-    setBill(Number(e.target.value));
-  }
   function handleReset() {
     setBill("");
     setPercentage1(0);
@@ -23,7 +20,10 @@ function TipCalculator() {
   }
   return (
     <div>
-      <BillInput bill={bill} onSetBill={onSetBill} />
+      <BillInput
+        bill={bill}
+        onSetBill={(e) => setBill(Number(e.target.value))}
+      />
       <SelectPercentage percentage={percentage1} onSelect={setPercentage1}>
         How did you like the service?
       </SelectPercentage>
