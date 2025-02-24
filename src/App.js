@@ -50,11 +50,9 @@ function SelectPercentage({ children }) {
 
 function Output({ amount }) {
   return (
-    <div>
-      <em>
-        You paid ${amount} (${amount} + X)
-      </em>
-    </div>
+    <h3>
+      You paid ${amount} (${amount} + $X tip)
+    </h3>
   );
 }
 
