@@ -1,7 +1,13 @@
 import { useState } from "react";
 import "./styles.css";
-
 export default function App() {
+  return (
+    <div>
+      <TipCalculator />
+    </div>
+  );
+}
+function TipCalculator() {
   const [amount, setAmount] = useState(0);
 
   function handleChange(e) {
