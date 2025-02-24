@@ -8,30 +8,30 @@ export default function App() {
   );
 }
 function TipCalculator() {
-  const [amount, setAmount] = useState(0);
+  const [bill, setBill] = useState(0);
 
   function handleChange(e) {
-    setAmount(Number(e.target.value));
+    setBill(Number(e.target.value));
   }
   return (
     <div>
-      <BillInput amount={amount} handleChange={handleChange} />
+      <BillInput bill={bill} handleChange={handleChange} />
       <SelectPercentage>How did you like the service?</SelectPercentage>
       <SelectPercentage>How did Your Friend like the service?</SelectPercentage>
-      <Output amount={amount} />
+      <Output bill={bill} />
       <Reset />
     </div>
   );
 }
 
-function BillInput({ amount, handleChange }) {
+function BillInput({ bill, handleChange }) {
   return (
     <div>
       <label>How much was the Bill </label>
       <input
         type="text"
         placeholder="enter bill"
-        value={amount}
+        value={bill}
         onChange={handleChange}
       />
     </div>
@@ -52,10 +52,10 @@ function SelectPercentage({ children }) {
   );
 }
 
-function Output({ amount }) {
+function Output({ bill }) {
   return (
     <h3>
-      You paid ${amount} (${amount} + $X tip)
+      You paid ${bill} (${bill} + $X tip)
     </h3>
   );
 }
