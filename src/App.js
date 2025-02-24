@@ -35,7 +35,7 @@ function Bill() {
 function Percentage() {
   return (
     <div>
-      <p>How did you like the service?</p>
+      <span>How did you like the service?</span>
       <span>
         <select>
           <option>Dissatisfied(0%)</option>
