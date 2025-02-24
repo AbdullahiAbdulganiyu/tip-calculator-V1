@@ -58,3 +58,11 @@ function Output({ amount }) {
     </div>
   );
 }
+
+function Reset() {
+  return (
+    <div>
+      <button>Reset</button>
+    </div>
+  );
+}
