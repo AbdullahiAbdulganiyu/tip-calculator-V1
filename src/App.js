@@ -9,6 +9,8 @@ export default function App() {
 }
 function TipCalculator() {
   const [bill, setBill] = useState(0);
+  const [percentage1, setPercentage1] = useState(0);
+  const [percentage2, setPercentage2] = useState(0);
 
   function onSetBill(e) {
     setBill(Number(e.target.value));
