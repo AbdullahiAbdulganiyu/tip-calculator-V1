@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div>
       <Bill amount={amount} handleChange={handleChange} />
-      <Percentage />
+      <Percentage>How did you like the service?</Percentage>
     </div>
   );
 }
@@ -33,10 +33,10 @@ function Bill({ amount, handleChange }) {
   );
 }
 
-function Percentage() {
+function Percentage({ children }) {
   return (
     <div>
-      <span>How did you like the service?</span>
+      <span>{children}</span>
       <span>
         <select>
           <option>Dissatisfied (0%)</option>
